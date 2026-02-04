@@ -14,6 +14,4 @@
             <?php } ?>
         </ul>
     <?php } ?>
-</body>
-
-</html>
+<?php require "components/footer.php"; ?>
