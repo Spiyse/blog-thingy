@@ -6,7 +6,7 @@
     <label>Bloga raksts<input name="content" value ='<?= $_POST['content'] ?? "" ?>'/></label><br/>
 
     <?php if(isset($errors["content"])){?>
-     <p><?=$errors["content"]?></p>
+     <p><?=htmlspecialchars($errors["content"])?></p>
     <?php } ?></br>
 
     <button>Izveidot</button>
