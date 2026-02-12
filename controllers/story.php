@@ -4,4 +4,4 @@ $title = "Ješka";
 $pageTitle = "Emuārs - par mums";
 $customStyles = "story.css";
 
-require "./views/story.view.php";
+require "./views/posts/story.view.php";

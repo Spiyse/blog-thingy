@@ -7,5 +7,12 @@ return [
     "/categories" => "controllers/categories.php",
     "/create" => "controllers/posts/create.php",
     "/edit" => "controllers/posts/edit.php",
-    "/delete" => "controllers/posts/delete.php"
+    "/delete" => "controllers/posts/delete.php",
+
+
+    "/-cat" => "controllers/Categories/index.php",
+    "/show-cat" => "controllers/Categories/show.php",
+    "/create-cat" => "controllers/Categories/create.php",
+    "/edit-cat" => "controllers/Categories/edit.php",
+    "/delete-cat" => "controllers/Categories/delete.php"
 ];
