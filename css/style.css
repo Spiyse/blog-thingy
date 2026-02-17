@@ -283,6 +283,213 @@ form {
   max-width: 500px;
 }
 
+/* --- COMMENTS --- */
+.comments {
+  margin-top: 28px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border: var(--border-main);
+  box-shadow: var(--shadow-retro);
+  max-width: 820px;
+}
+
+.comments h2 {
+  margin: 0 0 12px 0;
+}
+
+.comment-form {
+  gap: 12px;
+  max-width: 620px;
+}
+
+.comment-form label {
+  display: grid;
+  gap: 6px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  align-self: flex-start;
+}
+
+.comment-form button {
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+}
+
+.comment-form button:hover,
+.comment-form button:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--accent-pink);
+  filter: brightness(1.15);
+  outline: none;
+}
+
+.comment-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--accent-pink);
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+  margin-top: 16px;
+}
+
+.comment-card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid var(--accent-blue);
+  box-shadow: 3px 3px 0 var(--accent-pink);
+  padding: 14px 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: baseline;
+  margin: 0;
+}
+
+.comment-author {
+  color: var(--accent-blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comment-date {
+  color: #9fb3ff;
+  font-size: 0.82rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.comment-body {
+  margin: 0;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  gap: 12px;
+}
+
+.comment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.comment-actions .action-link,
+.comment-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.comment-actions .action-link {
+  color: #000;
+  background: var(--accent-blue);
+  border: 2px solid #000;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 var(--accent-pink);
+}
+
+.comment-actions .action-link:hover,
+.comment-actions .action-link:focus-visible {
+  filter: brightness(1.1);
+  outline: none;
+}
+
+.comment-actions .danger {
+  background: #ff3b30;
+  color: #000;
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+}
+
+.comment-actions .danger:hover,
+.comment-actions .danger:focus-visible,
+.danger:hover,
+.danger:focus-visible {
+  transform: translate(-3px, -1px) rotate(-1.5deg);
+  box-shadow: 7px 3px 0 var(--accent-pink);
+  filter: brightness(1.1);
+  outline: none;
+}
+
+.comment-actions .danger:active,
+.danger:active {
+  transform: translate(1px, 2px) rotate(1deg) scale(0.98);
+  box-shadow: 2px 2px 0px var(--accent-pink);
+}
+
+@keyframes danger-jolt {
+  0% { transform: translate(-3px, -1px) rotate(-1.5deg); }
+  45% { transform: translate(-2px, -3px) rotate(1deg); }
+  100% { transform: translate(-3px, -1px) rotate(-1.5deg); }
+}
+
+.comment-actions .danger:hover,
+.comment-actions .danger:focus-visible,
+.danger:hover,
+.danger:focus-visible {
+  animation: danger-jolt 0.18s ease-in-out;
+}
+
+.comment-actions form {
+  display: inline-flex;
+}
+
+.comment-actions form {
+  margin: 0;
+}
+
+.comment-empty {
+  margin: 0 0 12px 0;
+  color: #c7c7c7;
+}
+
+.search-form button {
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+}
+
+.search-form button:hover,
+.search-form button:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--accent-pink);
+  filter: brightness(1.15);
+  outline: none;
+}
+
+.search-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--accent-pink);
+}
+
 label {
   font-weight: bold;
   color: var(--accent-blue);

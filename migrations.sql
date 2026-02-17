@@ -26,3 +26,14 @@ SELECT posts.*,categories.category_name FROM posts
 LEFT JOIN categories
 ON posts.category_id = categories.id
 WHERE posts.id = 1;
+
+TRUNCATE comments
+
+CREATE TABLE comments(
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	autors VARCHAR(255) NOT NULL,
+	datums DATETIME,
+	coment VARCHAR(5200) NOT NULL, 
+	comment_id INT,
+	FOREIGN KEY (comment_id) REFERENCES posts(id) ON DELETE CASCADE
+);
