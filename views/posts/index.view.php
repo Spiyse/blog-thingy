@@ -1,6 +1,6 @@
 <?php require "./views/components/header.php";?>
 <?php require "./views/components/navbar.php";?>
-    <h1>Emuārss</h1>
+    <h1>Emuārssss</h1>
     <form class="search-form">
         <input name='search_query' value='<?= $_GET["search_query"] ?? "" ?>' />
         <button>Meklēt</button>
