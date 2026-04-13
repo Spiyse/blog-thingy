@@ -21,11 +21,6 @@ The website is fully in **Latvian** (since I'm from Latvia).
 - **Database**: MySQL (see `migrations.sql` for table structure)
 - Custom routing system (`router.php`, `routes.php`)
 
-## Project Status
-
-The project is fully functional.  
-**Recently fixed**: Category system now works correctly on the server.
-
 ## How to run locally
 
 1. Clone the repository
